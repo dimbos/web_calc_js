@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор услуг</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="calc">
+        <div class="tabs">
+            <div class="tab-left active">Лендинг</div>
+            <div class="tab-right">Многостраничник</div>
+        </div>
+        <div class="blocks" id="blocks-block">
+            <div class="blocks-title">Количество блоков</div>
+            <input class="counter" type="number" name="" id="counter-block" min=0>
+        </div>
+        <div class="blocks" id="pages-block">
+            <div class="blocks-title">Количество страниц</div>
+            <input class="counter" type="number" name="" id="counter-pages" min=0>
+        </div>
+        <div class="blocks">
+            <div class="blocks-title">Сколько часов на проект</div>
+            <input class="counter" type="number" name="" id="counter-hours" min=0>
+        </div>
+        <div class="blocks">
+            <div class="blocks-title">Стоимость вашего часа</div>
+            <input class="counter" type="number" name="" id="counter-rate" min=0>
+        </div>
+
+        <div class="addiction">
+            <div class="addiction-title">Дополнительно</div>
+            <div class="addiction-block">
+                <label><input class="checkbox" type="checkbox" id="changes-check">
+                    Возможность редактировать текст на сайте</label>
+            </div>
+            <div class="addiction-block">
+                <label><input class="checkbox" type="checkbox" id="changes-cms">
+                    Установка на CMS</label>
+            </div>
+        </div>
+        <div class="total">Общая стоимость
+        <input class="total-count" type="text" name="" value="5000" id="total-value">
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
