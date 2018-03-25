@@ -122,4 +122,11 @@ window.addEventListener('DOMContentLoaded', () => {
             totalValue.value = total;
         }
     });
+
+    for(let i = 0; i<input.length; i++)
+    {
+        input[i].addEventListener('keydown', (event) =>{
+            event.target.classList.toggle('blink');
+        });
+    }
 });

@@ -2,6 +2,36 @@
     box-sizing: border-box;
     outline: none;
 }
+
+.fade{
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade{
+    from    {
+        opacity: .1;
+    }
+
+    to {
+        opacity: 1;}
+}
+
+.blink{
+    animation-name: blink;
+    animation-duration: 1s;
+}
+
+@keyframes blink{
+    from    {
+        border-color: rgba(256, 256, 256, .8);
+    }
+
+    to {
+        border-color: rgba(239, 174, 2, 1);
+}
+}
+
 body{
     height: 100%;
     background-image: url(./img/bg.png);
@@ -152,3 +182,4 @@ input[type='checkbox']{
     color: #efae02;
     text-align: right;
 }
+
